@@ -1,19 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`expect to render CardList component 1`] = `
+exports[`expect to render CounterButton component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CardList
-    robots={
-        Array [
-            Object {
-              "email": "john@gmail.com",
-              "id": 1,
-              "name": "John Snow",
-              "username": "JohnJohn",
-            },
-          ]
-    }
+  Symbol(enzyme.__unrendered__): <CounterButton
+    color="red"
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -30,30 +21,19 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Card
-          email="john@gmail.com"
-          id={1}
-          name="John Snow"
-/>,
+        "Count: ",
+        0,
       ],
+      "color": "red",
+      "id": "counter",
+      "onClick": [Function],
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": "0",
-        "nodeType": "function",
-        "props": Object {
-          "email": "john@gmail.com",
-          "id": 1,
-          "name": "John Snow",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      "Count: ",
+      0,
     ],
-    "type": "div",
+    "type": "button",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -62,30 +42,19 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Card
-            email="john@gmail.com"
-            id={1}
-            name="John Snow"
-/>,
+          "Count: ",
+          0,
         ],
+        "color": "red",
+        "id": "counter",
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": "0",
-          "nodeType": "function",
-          "props": Object {
-            "email": "john@gmail.com",
-            "id": 1,
-            "name": "John Snow",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        "Count: ",
+        0,
       ],
-      "type": "div",
+      "type": "button",
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -114,5 +83,6 @@ ShallowWrapper {
     Symbol(enzyme.__providerValues__): undefined,
   },
   Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
 }
 `;
